@@ -1,12 +1,29 @@
-# React + Vite
+# 📋 React Form with Multiple States
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates how to build a controlled form in **React** where each form field (like name, email, password) is managed using its **own `useState`** hook.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 What You’ll Learn
 
-## Expanding the ESLint configuration
+- How to build a form in React
+- What are controlled components
+- How to manage state for each input field separately
+- Handling form submission with `e.preventDefault()`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+git clone https://github.com/your-username/react-form-multiple-state.git
+cd react-form-multiple-state
+
+### 2. Install dependencies
+
+npm install
+
+### 3. Start the development server
+
+npm run dev
