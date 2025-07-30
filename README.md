@@ -17,7 +17,7 @@ This project demonstrates how to build a controlled form in **React** where each
 
 ### 1. Clone the repo
 
-git clone https://github.com/your-username/react-form-multiple-state.git
+git clone https://github.com/siddhant-gavai/react-form-multiple-state
 cd react-form-multiple-state
 
 ### 2. Install dependencies
