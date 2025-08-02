@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./CommentForm.css";
 
 export default function CommentForm() {
   let [formData, setFormData] = useState({
@@ -24,37 +25,33 @@ export default function CommentForm() {
   };
 
   return (
-    <div>
-      <h4>Give a commment!</h4>
-
-      <form onSubmit={handleSubmit}>
+    <div className="form-container">
+      <h2 style={{ color: "black" }}>Leave a Comment</h2>
+      <form onSubmit={handleSubmit} className="comment-form">
         <label htmlFor="username">Username</label>
-        <br />
         <input
           type="text"
-          placeholder="username"
+          placeholder="Enter your name"
           value={formData.username}
           onChange={handleInputChange}
           id="username"
           name="username"
         />
 
-        <br />
         <label htmlFor="comment">Comment</label>
         <textarea
           name="comment"
           id="comment"
-          cols="30"
-          rows="10"
-          placeholder="write your comment here"
+          rows="5"
+          placeholder="Write your comment here..."
           value={formData.comment}
           onChange={handleInputChange}
         ></textarea>
-        <br />
-        <label htmlFor="rating">Rating</label>
+
+        <label htmlFor="rating">Rating (1 to 5)</label>
         <input
           type="number"
-          placeholder="rating"
+          placeholder="Rating"
           min={1}
           max={5}
           value={formData.rating}
@@ -62,7 +59,8 @@ export default function CommentForm() {
           id="rating"
           name="rating"
         />
-        <button>Add Comments</button>
+
+        <button type="submit">Add Comment</button>
       </form>
     </div>
   );

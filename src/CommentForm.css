@@ -1,0 +1,44 @@
+.form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form label {
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.comment-form input,
+.comment-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+}
+
+.comment-form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
+}
