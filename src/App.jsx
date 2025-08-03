@@ -4,13 +4,14 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Form from "./Form";
 import CommentForm from "./CommentForm";
+import Counter from "./Counter";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <CommentForm />
+      <Counter />
     </>
   );
 }
